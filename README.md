@@ -23,7 +23,8 @@ fissuraanal/
 ├── icons/                              ícones da instalação
 ├── scripts/
 │   ├── serve.ps1                       sobe o app em http://localhost:4599
-│   └── test-webhook.ps1               simula a notificação da Hotmart
+│   ├── test-webhook.ps1               simula a notificação da Hotmart
+│   └── create-test-user.ps1           cria/libera um usuário de teste direto no Supabase
 ├── .vscode/                           tasks + extensões recomendadas
 └── supabase/
     ├── schema.sql                      tabelas + RLS + função meu_acesso_valido()

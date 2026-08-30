@@ -23,6 +23,13 @@
       "command": "powershell",
       "args": ["-NoProfile", "-File", "${workspaceFolder}/scripts/test-webhook.ps1", "reembolso"],
       "problemMatcher": []
+    },
+    {
+      "label": "supabase: criar usuario de teste",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-NoProfile", "-File", "${workspaceFolder}/scripts/create-test-user.ps1"],
+      "problemMatcher": []
     }
   ]
 }
