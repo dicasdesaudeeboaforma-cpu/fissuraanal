@@ -8,8 +8,8 @@ Fluxo: **compra aprovada na Hotmart → webhook → cria usuário com senha gera
 
 1. Crie um projeto em <https://supabase.com>.
 2. Em **Project Settings → API**, copie:
-   - `Project URL` → vai em `fissura-app/config.js` (`SUPABASE_URL`)
-   - `anon public` key → vai em `fissura-app/config.js` (`SUPABASE_ANON_KEY`)
+   - `Project URL` → vai em `fissura/config.js` (`SUPABASE_URL`)
+   - `anon public` key → vai em `fissura/config.js` (`SUPABASE_ANON_KEY`)
    - `service_role` key → **NÃO** vai no front. Só é usada pela Edge Function (já fica disponível como secret padrão).
 
 ## 2. Criar as tabelas
@@ -67,7 +67,7 @@ Use o botão **"Testar webhook"** da Hotmart para validar. O log aparece em
 
 ## 6. Ligar o front
 
-Em `fissura-app/config.js` preencha `SUPABASE_URL`, `SUPABASE_ANON_KEY` e `COMPRA_URL`
+Em `fissura/config.js` preencha `SUPABASE_URL`, `SUPABASE_ANON_KEY` e `COMPRA_URL`
 (link do checkout da Hotmart, usado no botão "Renovar acesso").
 
 Enquanto `config.js` não estiver preenchido, o app abre em **modo de visualização livre**

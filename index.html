@@ -1,545 +1,350 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#2fb0ab" />
-  <meta name="description" content="Guia informativo sobre Fissura Anal: o que é, sintomas, tratamento passo a passo, mitos e preparo emocional. Funciona offline." />
-  <title>Fissura Anal — Guia de Cuidado</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fissura Anal Nunca Mais — O Guia Definitivo para a Cura e o Adeus às Dores</title>
+<meta name="description" content="O guia passo a passo que ajudou centenas de pessoas a aliviar a dor da fissura anal sem cirurgia e sem fila de espera. Acesso imediato por R$ 47." />
+<meta name="robots" content="index, follow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#eef8f8; --card:#ffffff; --fg:#1e3540; --fg-muted:#5c7079; --border:#dcecec;
+    --primary:#1f8fa6; --primary-dark:#146b82;
+    --grad-start:#2fb0ab; --grad-mid:#55c4bd; --grad-end:#a6e2d9;
+    --accent-soft:#e7f6f5; --soft-blue:#eef6fb;
+    --warn-bg:#fff1d6; --warn-fg:#8a5a12; --warn-br:#f3b73d;
+    --danger-bg:#ffe1e6; --danger-fg:#a23348;
+    --success-bg:#d9f5e3; --success-fg:#1f7a4a;
+    --gold:#f2b705;
+    --radius:20px; --radius-sm:14px;
+    --shadow:0 14px 34px -18px rgba(20,90,100,.38);
+    --shadow-sm:0 6px 18px -12px rgba(20,90,100,.30);
+    --font-body:'Nunito',system-ui,-apple-system,"Segoe UI",sans-serif;
+    --font-display:'Baloo 2','Nunito',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--font-body);color:var(--fg);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px;}
+  h1,h2,h3{font-family:var(--font-display);color:var(--primary-dark);line-height:1.2;}
+  strong{color:var(--primary-dark);}
+  a{color:inherit;}
 
-  <link rel="manifest" href="manifest.json" />
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
-  <link rel="apple-touch-icon" href="icons/icon-192.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  /* ---------- topo de confiança ---------- */
+  .trustbar{background:var(--primary-dark);color:#eafcfb;text-align:center;font-size:.8rem;font-weight:700;padding:9px 14px;letter-spacing:.02em;}
+
+  /* ---------- HERO ---------- */
+  .hero{background:linear-gradient(160deg,var(--grad-start),var(--grad-mid) 55%,var(--grad-end));color:#fff;padding:38px 0 46px;text-align:center;}
+  .eyebrow{display:inline-block;font-size:.74rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;background:rgba(255,255,255,.18);padding:6px 14px;border-radius:999px;margin-bottom:14px;}
+  .hero h1{font-size:2.1rem;color:#fff;margin-bottom:10px;}
+  .hero .sub{font-size:1.05rem;color:rgba(255,255,255,.95);max-width:560px;margin:0 auto 26px;}
+  .video-frame{background:#fff;border-radius:var(--radius);padding:10px;box-shadow:var(--shadow);max-width:560px;margin:0 auto 22px;}
+  .video-frame .ratio{position:relative;padding-top:56.25%;border-radius:12px;overflow:hidden;background:#000;}
+  .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .hero-note{font-size:.86rem;color:rgba(255,255,255,.9);margin-bottom:20px;}
+
+  /* ---------- CTA button ---------- */
+  .cta-btn{display:inline-flex;flex-direction:column;align-items:center;gap:2px;background:linear-gradient(135deg,#ffcf3f,var(--gold));color:#5a3c00;font-family:var(--font-display);font-weight:800;font-size:1.15rem;padding:16px 34px;border-radius:14px;text-decoration:none;box-shadow:0 12px 28px -10px rgba(0,0,0,.35);border:none;cursor:pointer;transition:transform .15s ease;}
+  .cta-btn:hover{transform:translateY(-2px);}
+  .cta-btn small{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;opacity:.75;}
+  .cta-wrap{text-align:center;margin:8px 0 4px;}
+  .cta-sub{display:block;margin-top:10px;font-size:.8rem;color:var(--fg-muted);}
+  .hero .cta-sub{color:rgba(255,255,255,.85);}
+
+  /* ---------- seções gerais ---------- */
+  section{padding:44px 0;}
+  .section-soft{background:var(--soft-blue);}
+  h2.section-title{font-size:1.5rem;text-align:center;margin-bottom:8px;}
+  p.section-lead{text-align:center;color:var(--fg-muted);max-width:520px;margin:0 auto 30px;font-size:.98rem;}
+
+  /* ---------- dor / agitação ---------- */
+  .pain-list{display:grid;gap:12px;margin-top:10px;}
+  .pain-item{display:flex;gap:12px;align-items:flex-start;background:var(--card);border-radius:var(--radius-sm);padding:16px 18px;box-shadow:var(--shadow-sm);}
+  .pain-item .ico{flex-shrink:0;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:var(--danger-bg);color:var(--danger-fg);font-weight:800;}
+  .pain-item p{margin:0;font-size:.95rem;}
+
+  /* ---------- solução ---------- */
+  .solution-card{background:var(--card);border-radius:var(--radius);padding:26px 24px;box-shadow:var(--shadow);text-align:center;}
+  .solution-card h2{font-size:1.4rem;margin-bottom:12px;}
+  .solution-card p{margin-bottom:12px;font-size:1rem;}
+
+  /* ---------- benefícios / conteúdo do e-book ---------- */
+  .benefits{display:grid;gap:12px;}
+  .benefit{display:flex;gap:12px;align-items:flex-start;background:var(--card);border-radius:var(--radius-sm);padding:14px 16px;box-shadow:var(--shadow-sm);}
+  .benefit .check{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--success-bg);color:var(--success-fg);display:grid;place-items:center;font-weight:900;font-size:.85rem;}
+  .benefit strong{display:block;font-size:.96rem;color:var(--fg);font-weight:800;}
+  .benefit span{font-size:.86rem;color:var(--fg-muted);}
+
+  .mockup{display:flex;justify-content:center;margin:30px 0 10px;}
+  .mockup-card{width:220px;background:linear-gradient(160deg,var(--primary-dark),var(--primary));border-radius:16px;padding:22px 18px;color:#fff;text-align:center;box-shadow:var(--shadow);}
+  .mockup-card .tag{font-size:.62rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.2);padding:4px 10px;border-radius:999px;display:inline-block;margin-bottom:10px;}
+  .mockup-card h3{color:#fff;font-size:1.1rem;margin-bottom:6px;}
+  .mockup-card p{font-size:.78rem;color:rgba(255,255,255,.85);}
+
+  /* ---------- depoimentos ---------- */
+  .stars{color:var(--gold);font-size:.9rem;margin-bottom:6px;letter-spacing:1px;}
+  .testi{display:grid;gap:14px;}
+  .testi-card{background:var(--card);border-radius:var(--radius-sm);padding:18px 20px;box-shadow:var(--shadow-sm);}
+  .testi-card p{font-size:.92rem;color:var(--fg);margin-bottom:10px;font-style:italic;}
+  .testi-name{font-weight:800;color:var(--primary-dark);font-size:.9rem;}
+  .testi-role{font-size:.78rem;color:var(--fg-muted);}
+
+  /* ---------- oferta / preço ---------- */
+  .offer{background:linear-gradient(160deg,var(--grad-start),var(--grad-mid) 55%,var(--grad-end));border-radius:var(--radius);padding:32px 24px;text-align:center;color:#fff;box-shadow:var(--shadow);}
+  .offer h2{color:#fff;font-size:1.4rem;margin-bottom:6px;}
+  .offer .price-old{font-size:1rem;text-decoration:line-through;opacity:.75;margin-bottom:2px;}
+  .price-big{font-family:var(--font-display);font-size:2.6rem;font-weight:800;margin:4px 0 4px;}
+  .price-big small{font-size:1rem;font-weight:700;}
+  .offer .includes{text-align:left;max-width:340px;margin:18px auto 22px;display:grid;gap:8px;}
+  .offer .includes div{display:flex;gap:8px;align-items:flex-start;font-size:.9rem;}
+  .guarantee{display:flex;align-items:center;gap:10px;justify-content:center;margin-top:18px;font-size:.84rem;color:rgba(255,255,255,.92);}
+  .guarantee .seal{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;font-size:1.05rem;}
+
+  /* ---------- FAQ ---------- */
+  .faq{display:grid;gap:10px;}
+  .faq details{background:var(--card);border-radius:var(--radius-sm);box-shadow:var(--shadow-sm);padding:4px 18px;}
+  .faq summary{cursor:pointer;padding:14px 0;font-weight:800;font-size:.95rem;color:var(--fg);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+";font-size:1.3rem;color:var(--primary);font-weight:400;flex-shrink:0;}
+  .faq details[open] summary::after{content:"–";}
+  .faq p{padding-bottom:14px;color:var(--fg-muted);font-size:.9rem;}
+
+  /* ---------- disclaimer / rodapé ---------- */
+  .disclaimer{background:var(--warn-bg);color:var(--warn-fg);border-radius:var(--radius-sm);padding:18px 20px;font-size:.82rem;line-height:1.6;}
+  .disclaimer strong{color:var(--warn-fg);}
+  footer{background:var(--primary-dark);color:#cfe9e8;text-align:center;font-size:.76rem;padding:26px 20px;line-height:1.7;}
+  footer strong{color:#fff;}
+
+  .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fff;border-top:1px solid var(--border);padding:10px 16px;box-shadow:0 -6px 18px rgba(20,90,100,.15);display:flex;align-items:center;justify-content:center;gap:12px;}
+  .sticky-cta .cta-btn{padding:12px 22px;font-size:.98rem;}
+  @media (min-width:641px){ .sticky-cta{display:none;} }
+  @media (max-width:640px){ body{padding-bottom:78px;} }
+</style>
 </head>
-<body class="auth-pending">
+<body>
 
-  <!-- ============ CABEÇALHO ============ -->
-  <header class="app-header" role="banner">
-    <div class="app-header__inner">
-      <span class="app-header__logo" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 21s-7-4.35-9.5-8.5A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6.5C19 16.65 12 21 12 21z"/>
-        </svg>
-      </span>
-      <div class="app-header__text">
-        <h1 class="app-header__title">Fissura Anal</h1>
-        <p class="app-header__subtitle">A dor da vergonha, a dor do medo — você não está sozinho</p>
+  <div class="trustbar">🔒 Compra 100% segura via Hotmart · Acesso imediato · <a href="/fissura/" style="color:#fff;text-decoration:underline;">Já comprei, quero acessar</a></div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Feito por quem viveu isso na pele</span>
+      <h1>Fissura Anal Nunca Mais</h1>
+      <p class="sub">O guia passo a passo que me ajudou a aliviar a dor em poucos dias — sem cirurgia, sem fila de espera do SUS e sem precisar contar pra ninguém.</p>
+
+      <div class="video-frame">
+        <div class="ratio">
+          <iframe src="https://www.youtube.com/embed/wi6w1-qt2bw?rel=0" title="Tratamento rápido para fissura anal" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
       </div>
-      <button id="account-btn" class="account-btn" type="button" hidden aria-label="Minha conta">
-        <span id="account-days" class="account-btn__days">—</span>
-      </button>
+      <p class="hero-note">▲ Assista até o final: no minuto final eu explico exatamente por onde comecei.</p>
+
+      <div class="cta-wrap">
+        <a class="cta-btn" href="https://pay.hotmart.com/E84507576Q?checkoutMode=10">
+          QUERO ALIVIAR MINHA DOR AGORA
+          <small>Apenas R$ 47 · acesso imediato</small>
+        </a>
+        <span class="cta-sub">Leva menos de 5 minutos para começar hoje.</span>
+      </div>
     </div>
   </header>
 
-  <!-- ============ CONTEÚDO / TELAS ============ -->
-  <main id="main" class="screens" role="main">
-
-    <!-- ---------- INÍCIO ---------- -->
-    <section class="screen is-active" id="inicio" tabindex="-1" aria-labelledby="inicio-h">
-      <div class="screen__pad">
-        <div class="screen-hero">
-          <span class="screen-hero__eyebrow">Você não está sozinho</span>
-          <h2 id="inicio-h">O que é a fissura anal</h2>
-          <p>
-            Respire fundo. Se você chegou até aqui com dor e com medo, saiba que a
-            fissura anal <strong>tem tratamento</strong> e, na maioria dos casos,
-            <strong>tem cura</strong>. Este guia organiza informações para te acolher
-            enquanto um médico especialista te atende.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="card__head">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 3-6 6.5-6 10a6 6 0 0 0 12 0c0-3.5-3-7-6-10z"/></svg>
-            </span>
-            <h3>Uma pequena ferida, uma dor enorme</h3>
-          </div>
-          <p>
-            É uma <strong>pequena ferida em forma de corte</strong> na camada
-            interna do ânus, bem na entrada — geralmente na parte de cima (posição
-            de 12 horas). Também é chamada de <em>úlcera anal</em>.
-          </p>
-          <p>
-            Provoca <strong>muita dor</strong>, desconforto, pequenos sangramentos
-            e ardência que pode durar horas ao evacuar. A ferida costuma causar
-            espasmos involuntários do esfíncter, o que dificulta ainda mais a
-            evacuação e a cicatrização.
-          </p>
-        </div>
-
-        <h2>Por que ela aparece</h2>
-        <div class="card card--soft">
-          <ul class="bullets">
-            <li>Fezes muito secas e duras que dilatam o esfíncter de forma repetida (causa mais comum)</li>
-            <li>Prisão de ventre</li>
-            <li>Diarreia intensa</li>
-            <li>Contato íntimo na região anal</li>
-            <li>Herpes genital e outras condições de saúde</li>
-          </ul>
-        </div>
-
-        <h2>Aguda ou crônica?</h2>
-        <div class="split">
-          <div class="card card--soft">
-            <h3>Aguda</h3>
-            <p>Recente, com menos de <strong>8 semanas</strong>. A grande maioria cicatriza com o tratamento clínico.</p>
-          </div>
-          <div class="card card--soft">
-            <h3>Crônica</h3>
-            <p>Dura mais de 8 semanas. Menos de <strong>10%</strong> das fissuras agudas evoluem para crônicas — nesses casos a cirurgia costuma ser mais indicada.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card__head">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 5 4-14 2 9h6"/></svg>
-            </span>
-            <h3>Fissura x Hemorroida</h3>
-          </div>
-          <p><strong>Hemorroidas:</strong> surgem como uma protuberância (volume), muitas vezes sentida ao toque, principalmente depois de evacuar.</p>
-          <p><strong>Fissura anal:</strong> é uma “rachadura” (corte) na região do ânus, causada por um trauma local — fezes endurecidas, esforço para evacuar, parto ou sexo anal. O sangramento costuma ser menor do que nas hemorroidas.</p>
-        </div>
+  <!-- ============ DOR ============ -->
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Se alguma dessas frases te descreve, continue lendo</h2>
+      <p class="section-lead">Eu passei por isso e sei exatamente como cada item da lista abaixo pesa no dia a dia.</p>
+      <div class="pain-list">
+        <div class="pain-item"><span class="ico">!</span><p>Você mal consegue sentar direito e evita qualquer coisa que aperte a região.</p></div>
+        <div class="pain-item"><span class="ico">!</span><p>Criou medo de ir ao banheiro porque sabe que vai doer — e a dor não passa rápido.</p></div>
+        <div class="pain-item"><span class="ico">!</span><p>Já gastou dinheiro com pomada de farmácia e nada resolveu de vez.</p></div>
+        <div class="pain-item"><span class="ico">!</span><p>Tem vergonha de falar sobre isso, até com médico.</p></div>
+        <div class="pain-item"><span class="ico">!</span><p>A fila do especialista não anda, e a dor não espera.</p></div>
       </div>
-    </section>
-
-    <!-- ---------- SINTOMAS ---------- -->
-    <section class="screen" id="sintomas" tabindex="-1" aria-labelledby="sintomas-h">
-      <div class="screen__pad">
-        <div class="screen-hero">
-          <span class="screen-hero__eyebrow">Autoconhecimento</span>
-          <h2 id="sintomas-h">Sintomas indiscutíveis</h2>
-          <p>Se você se identifica com os itens abaixo — principalmente os dois primeiros — é muito provável que seja uma fissura anal.</p>
-        </div>
-
-        <div class="callout callout--warn">
-          <strong>Atenção:</strong> sangue nas fezes pode indicar outros problemas.
-          Não faça autodiagnóstico definitivo — todo tratamento precisa ser
-          acompanhado por um médico especialista (proctologista).
-        </div>
-
-        <ul class="symptoms">
-          <li class="symptom symptom--strong">
-            <span class="symptom__icon" aria-hidden="true">🔥</span>
-            <div>
-              <span class="chip chip--danger">Sinal forte</span>
-              <h3>Dor com ardência severa</h3>
-              <p>Na entrada do ânus, como algo arranhando ou cortando ao evacuar, e que <strong>persiste depois</strong> da evacuação. É o principal sintoma e costuma ser pior na fase aguda.</p>
-            </div>
-          </li>
-          <li class="symptom symptom--strong">
-            <span class="symptom__icon" aria-hidden="true">🩸</span>
-            <div>
-              <span class="chip chip--danger">Sinal forte</span>
-              <h3>Sangue no papel higiênico ou no vaso</h3>
-              <p>Sangue <strong>vermelho vivo</strong>, que aparece logo após evacuar. Prefira a limpeza com ducha e elimine o papel higiênico.</p>
-            </div>
-          </li>
-          <li class="symptom">
-            <span class="symptom__icon" aria-hidden="true">〰️</span>
-            <div>
-              <span class="chip chip--info">Sinal inicial</span>
-              <h3>Coceira ou irritação ao redor do ânus</h3>
-            </div>
-          </li>
-          <li class="symptom">
-            <span class="symptom__icon" aria-hidden="true">🔎</span>
-            <div>
-              <span class="chip chip--info">Fique atento</span>
-              <h3>Rachadura visível na pele</h3>
-              <p>Um machucado pequeno que, mesmo assim, dói muito.</p>
-            </div>
-          </li>
-          <li class="symptom">
-            <span class="symptom__icon" aria-hidden="true">⏱️</span>
-            <div>
-              <span class="chip chip--warn">Sinal avançado</span>
-              <h3>Dor prolongada após evacuar</h3>
-              <p>Pode durar de 2 a 3 horas — ou o dia todo — nos casos mais avançados.</p>
-            </div>
-          </li>
-          <li class="symptom">
-            <span class="symptom__icon" aria-hidden="true">⚡</span>
-            <div>
-              <span class="chip chip--warn">Sinal avançado</span>
-              <h3>Espasmos do esfíncter</h3>
-              <p>Apertos involuntários na entrada do ânus que dificultam a evacuação.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ---------- GUIA DE TRATAMENTO ---------- -->
-    <section class="screen" id="tratamento" tabindex="-1" aria-labelledby="tratamento-h">
-      <div class="screen__pad">
-        <div class="screen-hero">
-          <span class="screen-hero__eyebrow">Passo a passo</span>
-          <h2 id="tratamento-h">O Tratamento Ideal</h2>
-          <p>Um passo a passo baseado na experiência de longo prazo do autor. Cada passo soma com o anterior.</p>
-        </div>
-
-        <ol class="steps">
-          <li class="step">
-            <div class="step__num" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v20M7 2a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3M17 2v20M17 2a4 4 0 0 0-4 4v3a4 4 0 0 0 4 4"/></svg>
-            </div>
-            <div class="step__body">
-              <span class="chip chip--step">Passo 1</span>
-              <h3>Controle da alimentação</h3>
-              <p>
-                Todo tratamento começa aqui. O objetivo é manter as fezes
-                <strong>macias</strong> — nem duras, nem muito moles. Aposte em
-                alimentação leve, fibras e boa hidratação.
-              </p>
-              <p class="step__note">A dor faz a mente pedir para comer pouco; alguma perda de peso é comum nessa fase.</p>
-            </div>
-          </li>
-          <li class="step">
-            <div class="step__num" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21c-3-3-3-6 0-11 2-3.5 3-6 3-8 3 2 5 6 5 9 0 5.5-4 10-8 10z"/></svg>
-            </div>
-            <div class="step__body">
-              <span class="chip chip--step">Passo 2</span>
-              <h3>Higiene rigorosa</h3>
-              <p>
-                Pare de usar papel higiênico. A limpeza passa a ser feita
-                <strong>somente com ducha</strong>, com bastante água e pressão
-                moderada, repetindo cerca de <strong>3 vezes ao dia</strong>.
-              </p>
-              <p class="step__note">Fora de casa, é possível improvisar com uma garrafa PET com um furo na tampa.</p>
-            </div>
-          </li>
-          <li class="step">
-            <div class="step__num" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-            </div>
-            <div class="step__body">
-              <span class="chip chip--step">Passo 3</span>
-              <h3>Óleo de Girassol com Ozônio</h3>
-              <p>
-                Depois de limpar bem, aplique o óleo de girassol ozonizado
-                (<strong>nível farmacêutico</strong> — nunca óleo de cozinha). Ele
-                é altamente cicatrizante e o ozônio ajuda no processo.
-              </p>
-              <p class="step__note">Aplique de leve, só encostando com a ponta do dedo. Não aperte e <strong>jamais use aplicadores</strong>.</p>
-            </div>
-          </li>
-          <li class="step">
-            <div class="step__num" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="7" rx="2"/><path d="M9 9v9a3 3 0 0 0 6 0V9"/></svg>
-            </div>
-            <div class="step__body">
-              <span class="chip chip--step">Passo 4</span>
-              <h3>A pomada “milagrosa”</h3>
-              <p>
-                Fórmula manipulada: <strong>Nifedipino 0,3% + Ozônio 5%</strong>,
-                em <strong>pomada</strong>, aplicada de <strong>8 em 8 horas</strong>.
-                O nifedipino relaxa o esfíncter e melhora a circulação local,
-                favorecendo a cicatrização.
-              </p>
-              <p class="step__note">Use apenas em pomada — <strong>nunca em supositório</strong>, para não ferir ainda mais a região. Aplique com calma, com a sensibilidade do dedo, sem aplicador. A fórmula precisa de prescrição médica.</p>
-            </div>
-          </li>
-        </ol>
-
-        <h2>Alívio para as crises</h2>
-        <div class="card card--soft">
-          <h3>Compressa / banho de assento morno</h3>
-          <p>
-            Numa bacia com água morna bem quentinha, sente-se por
-            <strong>10 a 15 minutos</strong>. A água quente melhora a circulação e
-            relaxa o esfíncter, que tende a ficar contraído o tempo todo e piora a
-            dor. Combine com repouso.
-          </p>
-        </div>
-
-        <div class="callout callout--warn">
-          As pomadas e fórmulas manipuladas exigem <strong>receita e acompanhamento
-          médico</strong>. Este passo a passo é informativo e não substitui a
-          consulta com um proctologista.
-        </div>
-      </div>
-    </section>
-
-    <!-- ---------- MITOS & CIRURGIA ---------- -->
-    <section class="screen" id="mitos" tabindex="-1" aria-labelledby="mitos-h">
-      <div class="screen__pad">
-        <div class="screen-hero">
-          <span class="screen-hero__eyebrow">Sem desinformação</span>
-          <h2 id="mitos-h">Mitos &amp; Cirurgia</h2>
-          <p>Toque em cada pergunta para abrir a resposta. Perder o medo começa por saber exatamente com o que você está lidando.</p>
-        </div>
-
-        <div class="accordion" id="accordion">
-          <div class="acc-item">
-            <button class="acc-trigger" aria-expanded="false">
-              <span>A fissura anal é uma doença grave?</span>
-              <span class="acc-chevron" aria-hidden="true"></span>
-            </button>
-            <div class="acc-panel"><div class="acc-panel__inner">
-              Não. A fissura anal não é uma doença grave e não traz risco de vida.
-              Ainda assim, precisa de um tratamento muito bem feito. Em alguns casos
-              ela é provocada por outro problema, que deve ser identificado e tratado.
-            </div></div>
-          </div>
-
-          <div class="acc-item">
-            <button class="acc-trigger" aria-expanded="false">
-              <span><span class="chip chip--myth">Mito</span>O único tratamento é a cirurgia?</span>
-              <span class="acc-chevron" aria-hidden="true"></span>
-            </button>
-            <div class="acc-panel"><div class="acc-panel__inner">
-              Não. Hoje existem pomadas eficientes e cuidados de higiene e
-              alimentação que aliviam a dor e promovem a cicatrização. A maioria
-              dos casos — inclusive fissuras grandes — se resolve sem cirurgia.
-            </div></div>
-          </div>
-
-          <div class="acc-item">
-            <button class="acc-trigger" aria-expanded="false">
-              <span><span class="chip chip--myth">Mito</span>Fissura anal só acontece em idosos?</span>
-              <span class="acc-chevron" aria-hidden="true"></span>
-            </button>
-            <div class="acc-panel"><div class="acc-panel__inner">
-              Mito. É mais comum em adultos jovens e de meia-idade, mas pode
-              atingir qualquer faixa etária, incluindo crianças.
-            </div></div>
-          </div>
-
-          <div class="acc-item">
-            <button class="acc-trigger" aria-expanded="false">
-              <span><span class="chip chip--myth">Mito</span>É sempre causada por constipação?</span>
-              <span class="acc-chevron" aria-hidden="true"></span>
-            </button>
-            <div class="acc-panel"><div class="acc-panel__inner">
-              Não. Além da constipação, pode ser causada por diarreia crônica,
-              traumatismo anal, relações sexuais anais dolorosas, parto vaginal
-              traumático e condições como a doença de Crohn.
-            </div></div>
-          </div>
-
-          <div class="acc-item">
-            <button class="acc-trigger" aria-expanded="false">
-              <span><span class="chip chip--myth">Mito</span>Ter fissura significa que tenho câncer?</span>
-              <span class="acc-chevron" aria-hidden="true"></span>
-            </button>
-            <div class="acc-panel"><div class="acc-panel__inner">
-              Mito. A grande maioria das fissuras anais não tem relação com câncer.
-              É uma condição benigna e, em geral, tratável com sucesso.
-            </div></div>
-          </div>
-
-          <div class="acc-item">
-            <button class="acc-trigger" aria-expanded="false">
-              <span><span class="chip chip--myth">Mito</span>Fissura anal não tem cura?</span>
-              <span class="acc-chevron" aria-hidden="true"></span>
-            </button>
-            <div class="acc-panel"><div class="acc-panel__inner">
-              Mito. Com o tratamento adequado e seguindo as orientações médicas, a
-              maioria das fissuras cicatriza completamente e os sintomas são
-              aliviados. A cura é possível.
-            </div></div>
-          </div>
-
-          <div class="acc-item">
-            <button class="acc-trigger" aria-expanded="false">
-              <span><span class="chip chip--myth">Mito</span>Vou precisar de colostomia?</span>
-              <span class="acc-chevron" aria-hidden="true"></span>
-            </button>
-            <div class="acc-panel"><div class="acc-panel__inner">
-              Mito. A colostomia é raríssima no tratamento da fissura anal,
-              reservada apenas a casos muito graves que não respondem a nenhum
-              outro tratamento.
-            </div></div>
-          </div>
-
-          <div class="acc-item acc-item--highlight">
-            <button class="acc-trigger" aria-expanded="false">
-              <span>Quando a cirurgia é indicada?</span>
-              <span class="acc-chevron" aria-hidden="true"></span>
-            </button>
-            <div class="acc-panel"><div class="acc-panel__inner">
-              <p>A cirurgia costuma ser o último recurso, considerada quando:</p>
-              <ul class="bullets">
-                <li><strong>Fissura crônica</strong> que persiste e não responde ao tratamento conservador;</li>
-                <li><strong>Fissuras complexas ou profundas</strong>, que envolvem os tecidos ao redor;</li>
-                <li><strong>Falha do tratamento conservador</strong> (dieta, pomadas, banhos de assento e medicamentos não aliviaram nem cicatrizaram);</li>
-                <li><strong>Complicações associadas</strong>, como fístulas anais ou hemorroidas que também precisam de cirurgia;</li>
-                <li><strong>Recorrência frequente</strong> após tratamentos não cirúrgicos anteriores.</li>
-              </ul>
-              <p>
-                A decisão é individualizada com o proctologista, que avalia a
-                gravidade, a resposta aos tratamentos e explica riscos, benefícios
-                e técnicas. As cirurgias modernas são mais simples do que se imagina
-                e costumam resolver o problema de forma definitiva.
-              </p>
-            </div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ---------- HISTÓRIA & PREPARO ---------- -->
-    <section class="screen" id="historia" tabindex="-1" aria-labelledby="historia-h">
-      <div class="screen__pad">
-        <div class="screen-hero">
-          <span class="screen-hero__eyebrow">Saúde mental</span>
-          <h2 id="historia-h">História &amp; Preparo</h2>
-          <p>A dor da vergonha e a dor do medo também precisam de tratamento. Aqui é sobre a sua cabeça.</p>
-        </div>
-
-        <div class="callout callout--calm">
-          Não há <strong>nada de vergonhoso</strong> nisso. Isso tudo vai passar —
-          e você ainda vai sair desta mais forte.
-        </div>
-
-        <h3>Prepare a sua cabeça</h3>
-        <div class="card">
-          <p>
-            O tratamento da fissura anal pode envolver um período de desconforto e,
-            às vezes, um tempo relativamente longo até a cicatrização completa. Ter
-            a mente preparada para isso ajuda a seguir as recomendações médicas com
-            mais paciência e a lidar melhor com a dor.
-          </p>
-          <p>
-            Cada caso é único e o tempo de recuperação varia de pessoa para pessoa.
-            O objetivo final é sempre o mesmo: a cicatrização completa e o alívio
-            dos sintomas. Mantenha uma comunicação aberta com o seu médico ao longo
-            do caminho.
-          </p>
-        </div>
-
-        <h3>Os momentos mais difíceis</h3>
-        <ul class="bullets">
-          <li><strong>Nas evacuações:</strong> a dor intensa durante e após pode gerar ansiedade em relação ao banheiro.</li>
-          <li><strong>No dia a dia:</strong> caminhar, ficar sentado por muito tempo ou dormir podem ser afetados.</li>
-          <li><strong>Na vida sexual:</strong> relações anais podem ser muito dolorosas nesse período.</li>
-          <li><strong>Durante o tratamento:</strong> aplicar pomada e fazer banhos de assento exige perseverança.</li>
-          <li><strong>No emocional:</strong> dor persistente e preocupação constante podem levar a ansiedade e desânimo. Busque apoio de profissionais, de pessoas próximas ou de grupos de apoio.</li>
-        </ul>
-
-        <h3>A história do autor</h3>
-        <div class="timeline">
-          <div class="tl-item">
-            <h4>Os primeiros sinais</h4>
-            <p>Uma leve ardência ao evacuar, num período de vários dias muito ressecado. Ele não mudou a alimentação nem deu atenção ao problema.</p>
-          </div>
-          <div class="tl-item">
-            <h4>O alerta ignorado</h4>
-            <p>Cerca de 15 dias depois, sangue no vaso sanitário. Achou que era hemorroida. No SUS, recebeu o mesmo palpite e um anti-inflamatório.</p>
-          </div>
-          <div class="tl-item">
-            <h4>O diagnóstico correto</h4>
-            <p>Sem plano de saúde e com a fila do especialista longa, pagou uma consulta particular: <strong>fissura anal grande</strong>. Começou com supositório — que se mostrou um problema no local já machucado.</p>
-          </div>
-          <div class="tl-item tl-item--low">
-            <h4>O dia do desespero</h4>
-            <p>Véspera de feriado prolongado, a maior dor da vida: a fissura se abrindo, dor intensa por cerca de 8 horas. O próximo atendimento só 6 dias depois. O que segurou o momento: <strong>repouso e compressa de água morna</strong>.</p>
-          </div>
-          <div class="tl-item tl-item--up">
-            <h4>A virada</h4>
-            <p>Trocou o supositório por <strong>pomada</strong>, somada a higiene rigorosa e controle alimentar. Vieram os dias de alívio e alegria no fim do tratamento.</p>
-          </div>
-        </div>
-
-        <div class="callout callout--calm">
-          O relato do autor é pessoal e não tem vínculo médico nem garante cura.
-          Ele serve para te dar companhia até que um especialista assuma o seu caso.
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ============ AVISO LEGAL FIXO ============ -->
-  <div class="legal" role="note">
-    ⚕️ Conteúdo apenas informativo. <strong>Todo tratamento deve ser acompanhado por um médico especialista.</strong>
-  </div>
-
-  <!-- ============ NAVEGAÇÃO INFERIOR ============ -->
-  <nav class="bottom-nav" role="navigation" aria-label="Navegação principal">
-    <button class="nav-btn is-active" data-target="inicio" aria-current="page">
-      <span class="nav-btn__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"/></svg></span>
-      <span>Início</span>
-    </button>
-    <button class="nav-btn" data-target="sintomas">
-      <span class="nav-btn__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6.5C19 16.65 12 21 12 21z"/></svg></span>
-      <span>Sintomas</span>
-    </button>
-    <button class="nav-btn" data-target="tratamento">
-      <span class="nav-btn__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></span>
-      <span>Tratamento</span>
-    </button>
-    <button class="nav-btn" data-target="mitos">
-      <span class="nav-btn__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg></span>
-      <span>Mitos</span>
-    </button>
-    <button class="nav-btn" data-target="historia">
-      <span class="nav-btn__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
-      <span>História</span>
-    </button>
-  </nav>
-
-  <!-- ============ PORTÃO DE ACESSO (login / expirado) ============ -->
-  <div id="auth-gate" class="auth-gate" aria-hidden="true">
-    <div class="auth-card">
-      <div class="auth-card__logo" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 21s-7-4.35-9.5-8.5A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6.5C19 16.65 12 21 12 21z"/>
-        </svg>
-      </div>
-
-      <!-- estado: LOGIN -->
-      <form id="login-form" class="auth-view is-active" autocomplete="on" novalidate>
-        <h2>Entrar no Guia</h2>
-        <p class="auth-hint">Use o e-mail e a senha que você recebeu após a compra.</p>
-        <label>E-mail
-          <input type="email" id="login-email" required autocomplete="username" inputmode="email" placeholder="voce@email.com" />
-        </label>
-        <label>Senha
-          <input type="password" id="login-pass" required autocomplete="current-password" placeholder="sua senha" />
-        </label>
-        <p id="login-error" class="auth-error" role="alert" hidden></p>
-        <button type="submit" class="auth-btn" id="login-submit">Entrar</button>
-        <p class="auth-small">Não recebeu o e-mail? Verifique o spam ou fale com o suporte da sua compra.</p>
-      </form>
-
-      <!-- estado: ACESSO EXPIRADO / INVÁLIDO -->
-      <div id="expired-view" class="auth-view">
-        <h2 id="expired-title">Seu acesso expirou</h2>
-        <p id="expired-msg" class="auth-hint">O período de 6 meses foi encerrado. Para continuar consultando o guia, adquira um novo acesso.</p>
-        <a id="expired-buy" class="auth-btn" href="#" target="_blank" rel="noopener">Renovar acesso</a>
-        <button type="button" class="auth-link" data-action="back-to-login">Entrar com outra conta</button>
-      </div>
-
-      <!-- estado: CONTA (logado) -->
-      <div id="account-view" class="auth-view">
-        <h2>Minha conta</h2>
-        <p class="auth-hint"><span id="acc-email"></span></p>
-        <p class="auth-badge" id="acc-status">Acesso ativo</p>
-        <label>Trocar senha
-          <input type="password" id="new-pass" autocomplete="new-password" placeholder="nova senha (mín. 6 caracteres)" />
-        </label>
-        <p id="acc-msg" class="auth-error" role="alert" hidden></p>
-        <button type="button" class="auth-btn" data-action="change-pass">Salvar nova senha</button>
-        <button type="button" class="auth-link" data-action="logout">Sair</button>
-        <button type="button" class="auth-link" data-action="close-account">Voltar ao guia</button>
-      </div>
-
-      <p class="auth-legal">⚕️ Conteúdo apenas informativo. Todo tratamento deve ser acompanhado por um médico especialista.</p>
     </div>
+  </section>
+
+  <!-- ============ SOLUÇÃO ============ -->
+  <section class="section-soft">
+    <div class="wrap">
+      <div class="solution-card">
+        <span class="eyebrow" style="background:var(--accent-soft);color:var(--primary-dark);">O que é o guia</span>
+        <h2>Reuni em um só lugar tudo que me ajudou a sair dessa</h2>
+        <p>Depois de meses convivendo com uma fissura anal grande — e quase indo parar numa cirurgia — organizei em um e-book simples e direto tudo que funcionou de verdade pra mim: alimentação, higiene, as pomadas certas e o passo a passo que segui todos os dias.</p>
+        <p><strong>Não é promessa de cura milagrosa.</strong> É o relato de quem já passou pelo que você está passando agora, traduzido em um passo a passo fácil de seguir enquanto você também busca acompanhamento médico.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTEÚDO / BENEFÍCIOS ============ -->
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">O que você recebe dentro do e-book</h2>
+      <p class="section-lead">11 capítulos práticos, sem enrolação, pra você aplicar ainda hoje.</p>
+      <div class="benefits">
+        <div class="benefit"><span class="check">✓</span><div><strong>O que é a fissura anal</strong><span>Entenda exatamente o que está acontecendo com o seu corpo.</span></div></div>
+        <div class="benefit"><span class="check">✓</span><div><strong>Como saber se é fissura</strong><span>Reconheça os sinais sem precisar adivinhar ou passar vergonha.</span></div></div>
+        <div class="benefit"><span class="check">✓</span><div><strong>Mitos e verdades</strong><span>Pare de seguir conselho de fórum que só atrasa sua melhora.</span></div></div>
+        <div class="benefit"><span class="check">✓</span><div><strong>Quanto tempo leva pra cicatrizar</strong><span>Uma expectativa realista, sem enrolação.</span></div></div>
+        <div class="benefit"><span class="check">✓</span><div><strong>O tratamento que eu segui, passo a passo</strong><span>Exatamente na ordem em que apliquei, do primeiro ao último dia.</span></div></div>
+        <div class="benefit"><span class="check">✓</span><div><strong>Hábitos alimentares que aceleram (ou atrasam) a cura</strong><span>O que evitar e o que priorizar no prato.</span></div></div>
+        <div class="benefit"><span class="check">✓</span><div><strong>Dieta ideal pros dias de crise</strong><span>O que comer quando a dor está insuportável.</span></div></div>
+        <div class="benefit"><span class="check">✓</span><div><strong>As pomadas que realmente ajudaram</strong><span>Incluindo a pomada manipulada que fez diferença pra mim.</span></div></div>
+        <div class="benefit"><span class="check">✓</span><div><strong>Tratamentos caseiros pra aliviar na hora</strong><span>Pra usar enquanto a consulta médica não chega.</span></div></div>
+        <div class="benefit"><span class="check">✓</span><div><strong>As complicações que pouca gente te conta</strong><span>Pra você saber o que observar e quando se preocupar.</span></div></div>
+        <div class="benefit"><span class="check">✓</span><div><strong>Como é a cirurgia, se um dia for necessária</strong><span>Perca o medo entendendo o processo antes de precisar dele.</span></div></div>
+      </div>
+
+      <div class="mockup">
+        <div class="mockup-card">
+          <span class="tag">E-book digital</span>
+          <h3>Fissura Anal Nunca Mais</h3>
+          <p>Acesso imediato em PDF, direto no seu e-mail após a compra.</p>
+        </div>
+      </div>
+
+      <div class="cta-wrap">
+        <a class="cta-btn" href="https://pay.hotmart.com/E84507576Q?checkoutMode=10">
+          QUERO O GUIA COMPLETO
+          <small>Apenas R$ 47</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEPOIMENTOS ============ -->
+  <section class="section-soft">
+    <div class="wrap">
+      <h2 class="section-title">Quem já usou, conta como foi</h2>
+      <p class="section-lead">Depoimentos reais de pessoas que compraram o guia.</p>
+      <div class="testi">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Eu sofria há meses com uma fissura anal que me causava dor intensa e desconforto diariamente. Tentei várias pomadas vendidas no mercado, mas nenhuma parecia ajudar de verdade. Foi então que resolvi comprar este e-book e saber qual a pomada manipulada que ele indica. Logo nos primeiros dias de uso, senti um alívio significativo na dor. Com o passar das semanas, a pomada foi acelerando o processo de cicatrização e minha qualidade de vida melhorou consideravelmente."</p>
+          <div class="testi-name">Ana Stefani</div>
+          <div class="testi-role">Esteticista</div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Eu não sabia mais o que fazer para aliviar a dor da minha fissura anal. Ela me impedia de realizar atividades simples do dia a dia e me causava muito constrangimento. Confesso que no início estava cético, pois já tinha tentado outras pomadas sem sucesso. Mas para minha surpresa, a pomada indicada nesse guia fez toda a diferença!"</p>
+          <div class="testi-name">Janderson</div>
+          <div class="testi-role">Motorista de app</div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Eu não consigo expressar o alívio que senti ao encontrar essa pomada manipulada para tratar a minha fissura anal. Durante meses, eu vivia com dor intensa e medo de ir ao banheiro. Nada parecia funcionar até que meu médico me recomendou essa pomada personalizada — que eu só descobri por causa do guia."</p>
+          <div class="testi-name">Jeferson dos Santos</div>
+          <div class="testi-role">Estoquista</div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Todo dia eu passava horas tentando encontrar uma pomada boa pra curar minha fissura. Depois que encontrei esse guia o jogo mudou. O tratamento tem que ser feito desde a alimentação, e a pomada que me indicaram, de fácil acesso em farmácia de manipulação, foi um sucesso. Estou vivendo novamente."</p>
+          <div class="testi-name">Adrianinho</div>
+          <div class="testi-role">Garçom</div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"A fissura anal era um pesadelo na minha vida. Cada ida ao banheiro era uma tortura, e eu já tinha perdido as esperanças de encontrar um tratamento eficaz. Com muita desconfiança encontrei e comprei esse guia — resumindo, é o melhor do mundo."</p>
+          <div class="testi-name">Marcelo Menezes</div>
+          <div class="testi-role">Confeiteiro</div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Eu sofri durante meses com uma fissura anal que me causava desconforto e dor intensa. Tentei vários tratamentos sem sucesso, até que uma amiga me indicou esse guia, que traz o tratamento completo desde a alimentação correta até produtos, pomadas e como proceder."</p>
+          <div class="testi-name">Mônica</div>
+          <div class="testi-role">Vendedora</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFERTA ============ -->
+  <section id="oferta">
+    <div class="wrap">
+      <div class="offer">
+        <span class="eyebrow">Acesso imediato</span>
+        <h2>Comece seu tratamento ainda hoje</h2>
+        <div class="price-big"><small>R$</small> 47</div>
+        <div class="cta-sub" style="color:rgba(255,255,255,.85);margin-bottom:4px;">Pagamento único · sem mensalidade</div>
+        <div class="includes">
+          <div>✅ E-book completo "Fissura Anal Nunca Mais" (PDF)</div>
+          <div>✅ Passo a passo do tratamento que eu segui</div>
+          <div>✅ Lista de pomadas e onde manipular</div>
+          <div>✅ Acesso imediato após a confirmação do pagamento</div>
+        </div>
+        <a class="cta-btn" href="https://pay.hotmart.com/E84507576Q?checkoutMode=10">
+          QUERO COMEÇAR AGORA
+          <small>Pagamento seguro via Hotmart</small>
+        </a>
+        <div class="guarantee">
+          <span class="seal">🛡️</span>
+          <span>Garantia incondicional de 7 dias. Se não for pra você, é só pedir reembolso — sem perguntas.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section-soft">
+    <div class="wrap">
+      <h2 class="section-title">Perguntas frequentes</h2>
+      <div class="faq">
+        <details>
+          <summary>Isso substitui uma consulta médica?</summary>
+          <p>Não. O e-book é informativo e conta minha experiência pessoal — todo tratamento da fissura anal precisa ser acompanhado por um médico especialista (proctologista). O guia serve para você chegar mais informado e menos perdido até essa consulta.</p>
+        </details>
+        <details>
+          <summary>Como eu recebo o e-book depois de comprar?</summary>
+          <p>O acesso é imediato: assim que o pagamento é aprovado pela Hotmart, você recebe o link de download por e-mail e pode acessar o PDF na hora, no celular ou computador.</p>
+        </details>
+        <details>
+          <summary>E se eu comprar e não gostar?</summary>
+          <p>Toda compra feita pela Hotmart tem garantia incondicional de 7 dias. Se você achar que não é pra você, é só solicitar o reembolso dentro desse prazo.</p>
+        </details>
+        <details>
+          <summary>É seguro comprar pela internet?</summary>
+          <p>Sim. O pagamento é processado inteiramente pela Hotmart, uma das maiores plataformas de produtos digitais do Brasil, com os mesmos padrões de segurança de qualquer grande e-commerce.</p>
+        </details>
+        <details>
+          <summary>Alguém vai saber o que eu comprei?</summary>
+          <p>Não. A compra aparece na fatura com um nome discreto, e o e-book chega direto no seu e-mail — sem contato com ninguém, sem constrangimento.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DISCLAIMER ============ -->
+  <section>
+    <div class="wrap">
+      <div class="disclaimer">
+        <strong>Atenção:</strong> este e-book foi baseado na experiência pessoal do autor e não deve ser considerado um tratamento definitivo ou promessa de cura para a fissura anal. Para essa condição, um médico especialista é quem deve avaliar, diagnosticar e definir o tratamento adequado. É de responsabilidade exclusiva do leitor buscar diagnóstico e acompanhamento médico correto.
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-wrap" style="padding-bottom:20px;">
+    <a class="cta-btn" href="https://pay.hotmart.com/E84507576Q?checkoutMode=10">
+      QUERO ALIVIAR MINHA DOR AGORA
+      <small>Apenas R$ 47 · acesso imediato</small>
+    </a>
   </div>
 
-  <div id="app-loading" class="app-loading"><span class="spinner" aria-hidden="true"></span></div>
+  <!-- ============ RODAPÉ ============ -->
+  <footer>
+    Este e-book pertence ao site <strong>dicasdesaudeeboaforma.com.br</strong>. É expressamente proibida qualquer cópia ou comercialização do mesmo, estando sujeito às penalidades da lei.<br />
+    Todos os direitos reservados.
+  </footer>
 
-  <script src="vendor/supabase.js"></script>
-  <script src="config.js"></script>
-  <script src="app.js"></script>
+  <!-- CTA fixo no rodapé, só mobile -->
+  <div class="sticky-cta">
+    <a class="cta-btn" href="https://pay.hotmart.com/E84507576Q?checkoutMode=10">
+      QUERO O GUIA · R$ 47
+    </a>
+  </div>
+
 </body>
 </html>

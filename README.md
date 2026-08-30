@@ -1,10 +1,13 @@
-# Guia Fissura Anal — PWA
+# Guia Fissura Anal — PWA + página de vendas
 
 Aplicativo PWA (informativo, saúde) com área de acesso paga: a pessoa compra na
 **Hotmart**, recebe **e-mail + senha** e acessa o conteúdo por **6 meses**.
 
 - Repositório: <https://github.com/dicasdesaudeeboaforma-cpu/fissuraanal>
 - Projeto Supabase: `wejgiterhfxqelpzhzki` (`https://wejgiterhfxqelpzhzki.supabase.co`)
+- Domínio planejado: `fissuraanal.dicasdesaudeeboaforma.com.br`
+  - `/` → página de vendas (`index.html` na raiz)
+  - `/fissura/` → o app (pasta `fissura/`)
 
 ## Stack
 
@@ -16,13 +19,15 @@ Aplicativo PWA (informativo, saúde) com área de acesso paga: a pessoa compra n
 
 ```
 fissuraanal/
-├── index.html / styles.css / app.js    app
-├── config.js                           URL + chave pública do Supabase + link de compra
-├── manifest.json / sw.js               PWA
-├── vendor/supabase.js                  lib do Supabase embutida (funciona offline)
-├── icons/                              ícones da instalação
+├── index.html                          página de vendas (raiz do domínio)
+├── fissura/
+│   ├── index.html / styles.css / app.js   o app (PWA)
+│   ├── config.js                          URL + chave pública do Supabase + link de compra
+│   ├── manifest.json / sw.js              PWA
+│   ├── vendor/supabase.js                 lib do Supabase embutida (funciona offline)
+│   └── icons/                             ícones da instalação
 ├── scripts/
-│   ├── serve.ps1                       sobe o app em http://localhost:4599
+│   ├── serve.ps1                       sobe tudo em http://localhost:4599
 │   ├── test-webhook.ps1               simula a notificação da Hotmart
 │   └── create-test-user.ps1           cria/libera um usuário de teste direto no Supabase
 ├── .vscode/                           tasks + extensões recomendadas
@@ -33,6 +38,8 @@ fissuraanal/
     ├── README.md                       passo a passo de configuração
     └── test/                           roteiro + payloads de teste
 ```
+
+Local: página de vendas em <http://localhost:4599/>, app em <http://localhost:4599/fissura/>.
 
 ## Trabalhando no VS Code + PowerShell
 
