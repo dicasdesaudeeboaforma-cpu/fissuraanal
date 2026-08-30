@@ -1,0 +1,19 @@
+{
+  "event": "PURCHASE_APPROVED",
+  "version": "2.0.0",
+  "data": {
+    "buyer": {
+      "email": "comprador.teste@exemplo.com",
+      "name": "Comprador de Teste"
+    },
+    "purchase": {
+      "transaction": "TESTE-0001",
+      "status": "APPROVED",
+      "approved_date": 1735000000000
+    },
+    "product": {
+      "id": 0,
+      "name": "Guia Fissura Anal"
+    }
+  }
+}

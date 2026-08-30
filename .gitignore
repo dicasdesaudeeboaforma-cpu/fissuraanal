@@ -1,0 +1,24 @@
+# Segredos / ambiente (NÃO versionar)
+.env
+.env.*
+supabase/.env.local
+supabase/.env
+
+# Supabase CLI (estado local)
+supabase/.branches/
+supabase/.temp/
+
+# Dependências
+node_modules/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Logs
+*.log
