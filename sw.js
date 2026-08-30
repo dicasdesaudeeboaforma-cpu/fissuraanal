@@ -4,7 +4,7 @@
    login/acesso (Supabase) sempre vão à rede.
    ===================================================== */
 
-var CACHE_NAME = 'fissura-anal-v3';
+var CACHE_NAME = 'fissura-anal-v4';
 
 var ASSETS = [
   './',

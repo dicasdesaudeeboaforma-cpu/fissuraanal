@@ -6,8 +6,8 @@
    Pegue-os em: Supabase > Project Settings > API
    ===================================================== */
 window.APP_CONFIG = {
-  SUPABASE_URL: "https://SEU-PROJETO.supabase.co",
-  SUPABASE_ANON_KEY: "COLE_AQUI_A_ANON_PUBLIC_KEY",
+  SUPABASE_URL: "https://wejgiterhfxqelpzhzki.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_U4t-XVpkKkjJAD0CyeZdBw_8vekRwKw",
 
   // dias antes de expirar em que o app começa a avisar
   AVISO_EXPIRA_DIAS: 15,

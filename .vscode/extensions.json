@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "denoland.vscode-deno",
+    "Supabase.vscode-supabase-extension",
+    "ms-vscode.powershell",
+    "ritwickdey.liveserver",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint"
+  ]
+}
