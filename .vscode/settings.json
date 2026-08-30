@@ -1,0 +1,23 @@
+{
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  // A pasta das Edge Functions roda em Deno; o resto do projeto é browser JS.
+  "deno.enablePaths": ["supabase/functions"],
+  "deno.lint": true,
+  "deno.unstable": false,
+
+  "[typescript]": { "editor.defaultFormatter": "denoland.vscode-deno" },
+
+  "files.exclude": {
+    "**/.git": true
+  },
+  "search.exclude": {
+    "vendor/**": true,
+    "**/*.min.js": true
+  },
+
+  // Terminal padrão em PowerShell (Windows)
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
+}

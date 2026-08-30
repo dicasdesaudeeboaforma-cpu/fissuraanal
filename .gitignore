@@ -1,6 +1,8 @@
 # Segredos / ambiente (NÃO versionar)
 .env
 .env.*
+!.env.local.example
+!supabase/.env.local.example
 supabase/.env.local
 supabase/.env
 
@@ -16,9 +18,17 @@ node_modules/
 Thumbs.db
 desktop.ini
 
-# Editores
-.vscode/
+# Editores — versiona só a config compartilhada do VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
 .idea/
+
+# Claude Code — versiona só o launch.json
+.claude/*
+!.claude/launch.json
 
 # Logs
 *.log
