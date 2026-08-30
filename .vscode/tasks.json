@@ -4,7 +4,7 @@
     {
       "label": "app: servir local (porta 4599)",
       "type": "shell",
-      "command": "pwsh",
+      "command": "powershell",
       "args": ["-NoProfile", "-File", "${workspaceFolder}/scripts/serve.ps1"],
       "isBackground": true,
       "problemMatcher": [],
@@ -13,14 +13,14 @@
     {
       "label": "webhook: teste compra aprovada",
       "type": "shell",
-      "command": "pwsh",
+      "command": "powershell",
       "args": ["-NoProfile", "-File", "${workspaceFolder}/scripts/test-webhook.ps1", "aprovada"],
       "problemMatcher": []
     },
     {
       "label": "webhook: teste reembolso",
       "type": "shell",
-      "command": "pwsh",
+      "command": "powershell",
       "args": ["-NoProfile", "-File", "${workspaceFolder}/scripts/test-webhook.ps1", "reembolso"],
       "problemMatcher": []
     }

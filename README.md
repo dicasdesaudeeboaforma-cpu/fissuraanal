@@ -47,7 +47,7 @@ O VS Code vai sugerir as extensões de `.vscode/extensions.json` (Deno para
 ### Rodar o app localmente
 
 ```powershell
-pwsh -File scripts/serve.ps1
+powershell -File scripts/serve.ps1
 ```
 
 ou **Terminal → Run Task → "app: servir local (porta 4599)"**.
@@ -59,8 +59,8 @@ servidor .NET embutido (sem instalar nada).
 ```powershell
 $env:FUNC_URL = "https://wejgiterhfxqelpzhzki.functions.supabase.co/hotmart-webhook"
 $env:HOTTOK   = "teste123"
-pwsh -File scripts/test-webhook.ps1 aprovada
-pwsh -File scripts/test-webhook.ps1 reembolso
+powershell -File scripts/test-webhook.ps1 aprovada
+powershell -File scripts/test-webhook.ps1 reembolso
 ```
 
 ## Estado atual
