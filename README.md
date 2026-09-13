@@ -76,9 +76,11 @@ powershell -File scripts/test-webhook.ps1 reembolso
 - [x] App PWA pronto e testado
 - [x] `config.js` ligado ao Supabase (URL + `sb_publishable_...`)
 - [x] Repositório no GitHub
+- [x] Publicado na Vercel: https://fissuraanal.vercel.app (deploy manual, projeto `nerd14/fissuraanal` — não conectado ao GitHub porque essa conta Vercel não tem acesso de escrita ao repo; publicar de novo com `vercel --prod` na pasta do projeto)
+- [ ] Descobrir/recuperar qual conta (Gmail) está logada no projeto Supabase `wejgiterhfxqelpzhzki` — necessário pra gerar um access token e rodar os próximos passos
 - [ ] Rodar `supabase/schema.sql` no SQL Editor
 - [ ] Publicar / servir a função `hotmart-webhook` + secrets
 - [ ] Rodar `supabase/test/ROTEIRO-DE-TESTES.md`
-- [ ] Publicar o app (subdomínio grátis) e conectar a Hotmart
+- [ ] Apontar domínio próprio (`fissuraanal.dicasdesaudeeboaforma.com.br`) e conectar a Hotmart
 
 > Conteúdo apenas informativo. Todo tratamento deve ser acompanhado por um médico especialista.
