@@ -71,16 +71,28 @@ powershell -File scripts/test-webhook.ps1 aprovada
 powershell -File scripts/test-webhook.ps1 reembolso
 ```
 
-## Estado atual
+## Estado atual (atualizado 2026-09-13)
 
 - [x] App PWA pronto e testado
 - [x] `config.js` ligado ao Supabase (URL + `sb_publishable_...`)
-- [x] Repositório no GitHub
-- [x] Publicado na Vercel: https://fissuraanal.vercel.app (deploy manual, projeto `nerd14/fissuraanal` — não conectado ao GitHub porque essa conta Vercel não tem acesso de escrita ao repo; publicar de novo com `vercel --prod` na pasta do projeto)
-- [ ] Descobrir/recuperar qual conta (Gmail) está logada no projeto Supabase `wejgiterhfxqelpzhzki` — necessário pra gerar um access token e rodar os próximos passos
-- [ ] Rodar `supabase/schema.sql` no SQL Editor
-- [ ] Publicar / servir a função `hotmart-webhook` + secrets
-- [ ] Rodar `supabase/test/ROTEIRO-DE-TESTES.md`
-- [ ] Apontar domínio próprio (`fissuraanal.dicasdesaudeeboaforma.com.br`) e conectar a Hotmart
+- [x] Repositório no GitHub, branch `main` atualizada e organizada (raiz = vendas, `/fissura` = app)
+- [x] **Publicado no GitHub Pages** (NÃO Vercel — projeto Vercel criado por engano na conta do Tarifly foi removido): https://dicasdesaudeeboaforma-cpu.github.io/fissuraanal/
+- [x] **Domínio próprio no ar**: http://fissuraanal.dicasdesaudeeboaforma.com.br/ (DNS na Cloudflare, `CNAME fissuraanal -> dicasdesaudeeboaforma-cpu.github.io`, DNS only). HTTPS deve ativar sozinho em breve (certificado automático do GitHub).
+- [x] Conta Supabase confirmada: mesma org `dicasdesaudeeboaforma-cpu` (login provavelmente via GitHub OAuth). Access token gerado em Account → Access Tokens, escopo restrito ao projeto.
+- [x] Projeto Supabase estava **pausado** (plano free) — reativado via API (`POST /v1/projects/{ref}/restore`)
+- [x] `schema.sql` executado com sucesso (tabela `acessos`, RLS, função `meu_acesso_valido()`, trigger) — rodado via Management API (`POST /v1/projects/{ref}/database/query`), sem precisar do SQL Editor manualmente
+- [x] Edge Function `hotmart-webhook` publicada (`supabase functions deploy hotmart-webhook --no-verify-jwt`)
+- [x] Secrets configurados: `HOTMART_HOTTOK=teste123` (placeholder de teste), `APP_URL`, `RESEND_API_KEY`, `EMAIL_FROM`
+- [x] **Fluxo completo testado de ponta a ponta**: webhook cria usuário → libera 6 meses → login funciona → conteúdo aparece com contador de dias restantes
+- [x] Domínio `dicasdesaudeeboaforma.com.br` verificado na Resend (SPF+DKIM+DMARC configurados na Cloudflare) — e-mail sai do domínio próprio, não mais do sandbox `resend.dev`
+- [x] Corrigido problema de e-mail caindo em spam: assunto/remetente continham "Fissura Anal" explicitamente, o que acionava filtro de conteúdo sensível — trocado pra "Acesso ao Guia" / "Seu acesso foi liberado ✅" (também mais alinhado à discrição que é a proposta do produto)
+- [x] **Confirmado**: com assunto/remetente neutros, o e-mail chega na caixa principal do Gmail (não spam)
+- [ ] Trocar `HOTMART_HOTTOK` de teste pelo token real quando conectar a Hotmart de verdade
+- [ ] Rodar o roteiro de testes formal (`supabase/test/ROTEIRO-DE-TESTES.md`) — o core já foi validado manualmente
+- [ ] Conectar a Hotmart de verdade (último passo, por decisão do usuário)
+
+### Credenciais/tokens usados nesta sessão (não commitados, guardar em local seguro)
+- Supabase access token (projeto-scoped): gerado pelo usuário, usado via `SUPABASE_ACCESS_TOKEN` nas chamadas da CLI/API — **não salvo em nenhum arquivo do repo**
+- Resend API key: configurada como secret da Edge Function via `supabase secrets set` — **não salva em nenhum arquivo do repo**
 
 > Conteúdo apenas informativo. Todo tratamento deve ser acompanhado por um médico especialista.

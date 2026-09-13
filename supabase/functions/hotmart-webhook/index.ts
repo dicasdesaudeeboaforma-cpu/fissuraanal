@@ -99,7 +99,7 @@ async function enviarEmail(to: string, nome: string | undefined, senha: string, 
   const resp = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { "Authorization": `Bearer ${RESEND_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: EMAIL_FROM, to, subject: "Seu acesso ao Guia Fissura Anal", html }),
+    body: JSON.stringify({ from: EMAIL_FROM, to, subject: "Seu acesso foi liberado ✅", html }),
   });
   if (!resp.ok) {
     console.error("Falha Resend:", resp.status, await resp.text());
