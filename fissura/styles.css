@@ -296,24 +296,24 @@ strong { color: var(--primary-dark); }
 }
 
 .step--highlight {
+  flex-direction: column;
   border: 1.5px solid var(--grad-start);
   background: linear-gradient(180deg, var(--accent-soft), var(--card) 40%);
-  position: relative;
+  gap: 12px;
 }
 .step--highlight .step__num {
   background: var(--grad-start);
   color: #fff;
 }
+.step__row { display: flex; gap: 14px; }
 .step__badge {
-  position: absolute;
-  top: -10px;
-  right: 14px;
+  align-self: flex-start;
   background: var(--gold);
   color: #5a3c00;
-  font-size: .68rem;
+  font-size: .72rem;
   font-weight: 800;
   letter-spacing: .02em;
-  padding: 3px 10px;
+  padding: 4px 12px;
   border-radius: 999px;
   box-shadow: 0 3px 8px rgba(0,0,0,.15);
 }
