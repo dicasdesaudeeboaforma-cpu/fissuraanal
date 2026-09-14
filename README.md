@@ -87,9 +87,15 @@ powershell -File scripts/test-webhook.ps1 reembolso
 - [x] Domínio `dicasdesaudeeboaforma.com.br` verificado na Resend (SPF+DKIM+DMARC configurados na Cloudflare) — e-mail sai do domínio próprio, não mais do sandbox `resend.dev`
 - [x] Corrigido problema de e-mail caindo em spam: assunto/remetente continham "Fissura Anal" explicitamente, o que acionava filtro de conteúdo sensível — trocado pra "Acesso ao Guia" / "Seu acesso foi liberado ✅" (também mais alinhado à discrição que é a proposta do produto)
 - [x] **Confirmado**: com assunto/remetente neutros, o e-mail chega na caixa principal do Gmail (não spam)
-- [ ] Trocar `HOTMART_HOTTOK` de teste pelo token real quando conectar a Hotmart de verdade
-- [ ] Rodar o roteiro de testes formal (`supabase/test/ROTEIRO-DE-TESTES.md`) — o core já foi validado manualmente
-- [ ] Conectar a Hotmart de verdade (último passo, por decisão do usuário)
+- [x] **Webhook da Hotmart cadastrado e conectado de verdade**: Ferramentas → Webhook (API e notificações), URL `https://wejgiterhfxqelpzhzki.supabase.co/functions/v1/hotmart-webhook`, aplicado ao produto "Tudo o que você precisa saber sobre Fissura Anal" (ID 3098248)
+- [x] `HOTMART_HOTTOK` trocado pelo token real da conta (não é mais o placeholder `teste123`) — testado e confirmado que rejeita token errado (401) e aceita o real
+- [x] Decisão: manter o PDF como bônus vitalício entregue pela própria Hotmart, além do acesso ao app por 6 meses (dupla entrega intencional)
+- [x] Página de vendas (`index.html`) e e-mail do app (`hotmart-webhook/index.ts`) atualizados pra explicar a entrega dupla ao cliente, evitando que o segundo e-mail pareça spam/phishing
+- [x] **Fluxo real testado com Hottok de produção**, e-mail chegando na caixa principal — sistema pronto pra vendas reais
+- [ ] Rodar o roteiro de testes formal (`supabase/test/ROTEIRO-DE-TESTES.md`) — opcional, o core já foi validado manualmente várias vezes
+- [ ] Decidir se o "formato E-book" do produto na Hotmart precisa mudar (o botão "Trocar Produto" existe mas não confirmamos o que ele altera — não mexido por precaução; provavelmente é só rótulo de vitrine, sem efeito funcional)
+
+## PROJETO EM PRODUÇÃO — pode receber vendas reais
 
 ### Credenciais/tokens usados nesta sessão (não commitados, guardar em local seguro)
 - Supabase access token (projeto-scoped): gerado pelo usuário, usado via `SUPABASE_ACCESS_TOKEN` nas chamadas da CLI/API — **não salvo em nenhum arquivo do repo**
