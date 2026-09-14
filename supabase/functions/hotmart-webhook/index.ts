@@ -87,6 +87,7 @@ async function enviarEmail(to: string, nome: string | undefined, senha: string, 
   const html = `
     <div style="font-family:Arial,sans-serif;max-width:520px;margin:auto;color:#21323d">
       <h2 style="color:#0a3d62">Seu acesso ao Guia foi liberado ✅</h2>
+      <p style="font-size:13px;color:#52626d">Esse é o segundo e-mail da sua compra — o primeiro (da Hotmart) trouxe o PDF. Este aqui é o seu acesso ao aplicativo do guia.</p>
       <p>${saud} Sua compra foi aprovada e você já pode acessar o conteúdo completo por <b>${ACCESS_MONTHS} meses</b> (até <b>${validade}</b>).</p>
       <table style="background:#f0f8fd;border-radius:10px;padding:14px 18px;margin:16px 0">
         <tr><td style="padding:4px 0">E-mail de acesso:</td><td style="padding:4px 0"><b>${to}</b></td></tr>
